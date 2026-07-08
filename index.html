@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emily Trief Portfolio</title> </head>
-  <body> <h1>Hello, World!</h1> </body>
-  </html>
+  <meta name="description" content="Welcome to Emily Trief's portfolio. Designer, developer, and creator of cute, delightful, and interactive web experiences.">
+  <title>Emily Trief's Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Simple & Fun Background Patterns -->
+  <div class="bg-pattern" id="bg-pattern"></div>
+  <div class="floating-doodles" id="floating-doodles"></div>
+  <!-- Header Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="logo-area">
+        <span class="logo-emoji">✨</span>
+        <span class="logo-text">Emily Trief</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle theme mode">
+          <span class="mode-icon" id="theme-icon">✨</span>
+          <span class="theme-text" id="theme-text">Dreamy Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Projects Section -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+          <h2 id="projects-heading" class="section-title"><span class="title-emoji">🧸</span> Featured Projects</h2>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card card">
+              <div class="project-icon">🐱</div>
+              <h3 class="project-title">Kawaii Companion</h3>
+              <p class="project-desc">
+                An interactive virtual pet companion with smooth CSS animations, stats tracking, and a cute responsive mood board.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Keyframes</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </article>
+            <!-- Project 2 -->
+            <article class="project-card card">
+              <div class="project-icon">🎨</div>
+              <h3 class="project-title">Doodle Pad App</h3>
+              <p class="project-desc">
+                A cozy, minimal canvas drawing application with colorful tools, pastel themes, and downloadable sketch options.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML Canvas</span>
+                <span class="tag">CSS Custom Prop</span>
+                <span class="tag">JS Logic</span>
+              </div>
+            </article>
+            <!-- Project 3 -->
+            <article class="project-card card">
+              <div class="project-icon">☁️</div>
+              <h3 class="project-title">Cozy Habit Tracker</h3>
+              <p class="project-desc">
+                A visual tracker supporting daily routines, generating positive affirmations and soft particle rewards upon check-in.
+              </p>
+              <div class="project-tags">
+                <span class="tag">LocalStorage</span>
+                <span class="tag">SVG Icons</span>
+                <span class="tag">Animations</span>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer class="app-footer">
+          <p>© 2026 Emily Trief. Made with 💖 and coding sparkles. All rights reserved. ⭐</p>
+        </footer>
+        <!-- Script -->
+        <script src="script.js"></script>
+      </body>
+      </html>
