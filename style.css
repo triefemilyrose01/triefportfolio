@@ -1,0 +1,17 @@
+:root {
+  /* Default Theme: Peach & Lavender accents on White background */
+  --bg-primary: #ffffff;
+  --bg-secondary: #faf9ff;
+  --text-main: #4a3e3d;
+  --text-muted: #8d7e7c;
+  --accent-color: #ff9fb2;
+  --accent-hover: #ff7e98;
+  --accent-secondary: #c2b5ff;
+  --accent-secondary-hover: #a894ff;
+  --pattern-color: #f1ecff;
+  --doodle-color: rgba(194, 181, 255, 0.22);
+
+  --card-bg: rgba(255, 255, 255, 0.88);
+  --card-border: #f3ebff;
+  --card-shadow: 0 10px 30px rgba(181, 163, 255, 0.12);
+  --input-border: #f0e7ff;
