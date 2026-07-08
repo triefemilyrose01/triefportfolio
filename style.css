@@ -60,10 +60,6 @@ body {
   gap: 0.5rem;
   text-decoration: none;
 }
-.logo-emoji {
-  font-size: 1.8rem;
-  animation: pulse-star 1.5s infinite alternate;
-}
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
