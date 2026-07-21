@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quasi-object - Emily Trief</title>
+  <title>Quasi Object - Emily Trief</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Include Google Model Viewer CDN script for rendering 3D GLB models -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <div class="bg-pattern" id="bg-pattern"></div>
@@ -27,11 +31,20 @@
     <div style="max-width: 600px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 20px;">
 
       <h1 style="font-size: 2.5rem; color: var(--text-color, #333); margin: 0; text-align: left;">
-        <span class="title-emoji">🌱</span> Quasi-object
+        <span class="title-emoji">🌱</span> Quasi Object
       </h1>
 
       <div style="width: 100%; background: white; padding: 15px; border-radius: 24px; box-shadow: 0 8px 16px rgba(0,0,0,0.05); box-sizing: border-box;">
-        <img src="Assets/quasi-object.glb" alt="Quasi-object model" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <!-- Using model-viewer component to load and render the 3D model (quasi-object.glb) -->
+        <model-viewer src="Assets/quasi-object.glb"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      camera-controls
+                      tone-mapping="neutral"
+                      shadow-intensity="1"
+                      alt="Quasi Object 3D model"
+                      style="width: 100%; height: 400px; display: block; border-radius: 12px; background-color: #f9f9f9;">
+        </model-viewer>
       </div>
 
     </div>
