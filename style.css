@@ -24,6 +24,7 @@
   font-family: 'Fredoka', 'Quicksand', 'Nunito', sans-serif;
   transition: background-color 0.4s ease, border-color 0.4s ease;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,8 +32,6 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-main);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   position: relative;
   overflow-x: hidden;
 }

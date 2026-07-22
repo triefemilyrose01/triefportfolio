@@ -25,8 +25,11 @@ function setupDoodles() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.classList.add('doodle');
     svg.setAttribute('viewBox', '0 0 30 30');
-    svg.style.width = `${Math.random() * 20 + 20}px`;
-    svg.style.height = svg.style.width;
+    const size = Math.random() * 20 + 20;
+    svg.setAttribute('width', size);
+    svg.setAttribute('height', size);
+    svg.style.width = `${size}px`;
+    svg.style.height = `${size}px`;
     svg.style.left = `${Math.random() * 90 + 5}%`;
     
     // Randomize movement dynamics
